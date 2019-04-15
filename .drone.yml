@@ -10,4 +10,8 @@ steps:
   when:
   event:
   - push
-  - pull-request      
+  - pull-request     
+  
+services:
+- name: myApp
+  image: microsoft/aspnetcore-build
