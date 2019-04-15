@@ -3,7 +3,7 @@ name: droneciintegration
 
 steps:
 - name: build
-  image:  mydrone
+  image: mydrone
   commands:
   - docker build
   when:
