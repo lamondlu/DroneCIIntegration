@@ -14,5 +14,5 @@
  # Stage 2
  FROM microsoft/aspnetcore
  WORKDIR /app
- COPY --from=builder /app .
+ COPY --from=builder /app .  
  ENTRYPOINT ["dotnet", "DroneCIIntegration.dll"] 
