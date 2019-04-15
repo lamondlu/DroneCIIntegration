@@ -3,7 +3,7 @@ name: droneciintegration
 
 steps:
 - name: build
-  image: mcr.microsoft.com/dotnet/core/runtime:2.2
+  image: microsoft/aspnetcore-build
   commands:
   - dotnet restore
   - dotnet run 
