@@ -2,7 +2,11 @@ kind: pipeline
 name: default
 
 steps:
-- name: webapi
-  image:  microsoft/aspnetcore-build
+- name: build
+  image:  myWebApi
   commands:
   - docker build
+  when:
+  event:
+  - push
+  - pull-request
