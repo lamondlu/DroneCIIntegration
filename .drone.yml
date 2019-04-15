@@ -3,7 +3,7 @@ name: droneciintegration
 
 steps:
 - name: build
-  image: mydrone
+  image: mcr.microsoft.com/dotnet/core/runtime:2.2
   commands:
   - docker build
   when:
