@@ -15,4 +15,4 @@
  FROM microsoft/aspnetcore
  WORKDIR /app
  COPY --from=builder /app .
- ENTRYPOINT ["dotnet", "DroneCIIntegration.dll"]
+ ENTRYPOINT ["dotnet", "DroneCIIntegration.dll"] 
