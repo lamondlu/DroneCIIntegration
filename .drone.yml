@@ -1,0 +1,8 @@
+kind: pipeline
+name: default
+
+steps:
+- name: webapi
+  image:  microsoft/aspnetcore-build
+  commands:
+  - docker build
