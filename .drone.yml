@@ -3,10 +3,10 @@ name: droneciintegration
 
 steps:
 - name: build
-  image:  myWebApi
+  image:  mydrone
   commands:
   - docker build
   when:
   event:
   - push
-  - pull-request    
+  - pull-request      
