@@ -5,7 +5,8 @@ steps:
 - name: build
   image: mcr.microsoft.com/dotnet/core/runtime:2.2
   commands:
-  - docker build
+  - dotnet restore
+  - dotnet run 
   when:
   event:
   - push
