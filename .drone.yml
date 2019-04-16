@@ -2,9 +2,11 @@ kind: pipeline
 name: droneciintegration
 
 steps:
-- name: build
-  commands:
-  - docker build --force-rm -t lamondapp:v1 .
+- name: docker  
+  image: plugins/docker
+  settings:
+    repo: 58.87.112.192/lamondlu/app1
+    registry: 58.87.112.192:6000
   when:
   event:
   - push
