@@ -11,7 +11,3 @@ steps:
   event:
   - push
   - pull-request     
-  
-services:
-- name: myApp
-  image: microsoft/aspnetcore-build
