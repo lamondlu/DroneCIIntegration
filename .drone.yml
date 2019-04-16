@@ -3,10 +3,8 @@ name: droneciintegration
 
 steps:
 - name: build
-  image: mcr.microsoft.com/dotnet/core/sdk:2.2
   commands:
-  - dotnet restore
-  - dotnet run 
+  - docker build --force-rm -t lamondapp:v1 .
   when:
   event:
   - push
